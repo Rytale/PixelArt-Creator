@@ -1,0 +1,152 @@
+Aug 22, 2024 9:37:20 PM net.rytale.pixelart.gui.MainWindow start
+INFO: Pixel Art Creator started successfully.
+Aug 22, 2024 9:52:22 PM net.rytale.pixelart.gui.MainWindow start
+INFO: Pixel Art Creator started successfully.
+Aug 22, 2024 9:57:56 PM net.rytale.pixelart.gui.MainWindow start
+INFO: Pixel Art Creator started successfully.
+Aug 22, 2024 9:58:31 PM net.rytale.pixelart.gui.MainWindow start
+INFO: Pixel Art Creator started successfully.
+Aug 22, 2024 10:07:30 PM net.rytale.pixelart.gui.MainWindow start
+INFO: Pixel Art Creator started successfully.
+Aug 22, 2024 10:09:19 PM net.rytale.pixelart.gui.MainWindow start
+INFO: Pixel Art Creator started successfully.
+Aug 22, 2024 10:42:16 PM net.rytale.pixelart.gui.MainWindow start
+INFO: Pixel Art Creator started successfully.
+Aug 22, 2024 11:01:37 PM net.rytale.pixelart.gui.MainWindow start
+INFO: Pixel Art Creator started successfully.
+Aug 22, 2024 11:08:49 PM net.rytale.pixelart.gui.MainWindow start
+INFO: Pixel Art Creator started successfully.
+Aug 22, 2024 11:19:25 PM net.rytale.pixelart.gui.MainWindow start
+INFO: Pixel Art Creator started successfully.
+Aug 22, 2024 11:51:49 PM net.rytale.pixelart.gui.MainWindow start
+INFO: Pixel Art Creator started successfully.
+Aug 22, 2024 11:57:05 PM net.rytale.pixelart.gui.MainWindow start
+INFO: Pixel Art Creator started successfully.
+Aug 23, 2024 12:15:43 AM net.rytale.pixelart.gui.MainWindow start
+INFO: Pixel Art Creator started successfully.
+Aug 23, 2024 12:39:32 AM net.rytale.pixelart.gui.MainWindow start
+INFO: Pixel Art Creator started successfully.
+Aug 23, 2024 12:44:21 AM net.rytale.pixelart.gui.MainWindow start
+INFO: Pixel Art Creator started successfully.
+Aug 23, 2024 12:44:30 AM net.rytale.pixelart.gui.MainWindow lambda$start$2
+INFO: Application is closing.
+Aug 23, 2024 12:47:23 AM net.rytale.pixelart.gui.MainWindow start
+INFO: Pixel Art Creator started successfully.
+Aug 23, 2024 1:29:48 AM net.rytale.pixelart.gui.MainWindow lambda$start$2
+INFO: Application is closing.
+Aug 23, 2024 1:30:32 AM net.rytale.pixelart.gui.MainWindow updateToolOptionsPanel
+WARNING: No active tool selected.
+Aug 23, 2024 1:30:32 AM net.rytale.pixelart.gui.MainWindow start
+INFO: Pixel Art Creator started successfully.
+Aug 23, 2024 1:30:37 AM net.rytale.pixelart.gui.MainWindow updateToolOptionsPanel
+WARNING: No active tool selected.
+Aug 23, 2024 1:30:38 AM net.rytale.pixelart.gui.MainWindow updateToolOptionsPanel
+WARNING: No active tool selected.
+Aug 23, 2024 1:30:44 AM net.rytale.pixelart.gui.MainWindow updateToolOptionsPanel
+WARNING: No active tool selected.
+Aug 23, 2024 2:30:41 AM net.rytale.pixelart.gui.MainWindow lambda$start$2
+INFO: Application is closing.
+Aug 23, 2024 2:31:15 AM net.rytale.pixelart.tools.ToolLoader loadTools
+INFO: Attempting to load class: net.rytale.pixelart.tools.tool.BucketFillTool
+Aug 23, 2024 2:31:15 AM net.rytale.pixelart.tools.ToolLoader loadTools
+INFO: Loaded tool: net.rytale.pixelart.tools.tool.BucketFillTool
+Aug 23, 2024 2:31:15 AM net.rytale.pixelart.tools.ToolLoader loadTools
+INFO: Attempting to load class: net.rytale.pixelart.tools.tool.EraserTool
+Aug 23, 2024 2:31:15 AM net.rytale.pixelart.tools.ToolLoader loadTools
+INFO: Loaded tool: net.rytale.pixelart.tools.tool.EraserTool
+Aug 23, 2024 2:31:15 AM net.rytale.pixelart.tools.ToolLoader loadTools
+INFO: Attempting to load class: net.rytale.pixelart.tools.tool.LineTool
+Aug 23, 2024 2:31:15 AM net.rytale.pixelart.tools.ToolLoader loadTools
+INFO: Loaded tool: net.rytale.pixelart.tools.tool.LineTool
+Aug 23, 2024 2:31:15 AM net.rytale.pixelart.tools.ToolLoader loadTools
+INFO: Attempting to load class: net.rytale.pixelart.tools.tool.PencilTool
+Aug 23, 2024 2:31:15 AM net.rytale.pixelart.tools.ToolLoader loadTools
+INFO: Loaded tool: net.rytale.pixelart.tools.tool.PencilTool
+Aug 23, 2024 2:31:15 AM net.rytale.pixelart.tools.ToolLoader loadTools
+INFO: Attempting to load class: net.rytale.pixelart.tools.tool.RectangleTool
+Aug 23, 2024 2:31:15 AM net.rytale.pixelart.tools.ToolLoader loadTools
+INFO: Loaded tool: net.rytale.pixelart.tools.tool.RectangleTool
+Aug 23, 2024 2:31:15 AM net.rytale.pixelart.tools.ToolLoader createTool
+INFO: Attempting to create tool: net.rytale.pixelart.tools.tool.EraserTool
+Aug 23, 2024 2:31:15 AM net.rytale.pixelart.tools.ToolLoader createTool
+SEVERE: Failed to create tool: net.rytale.pixelart.tools.tool.EraserTool.<init>(net.rytale.pixelart.layers.PixelCanvas,javafx.scene.paint.Color)
+Aug 23, 2024 2:31:15 AM net.rytale.pixelart.gui.MainWindow updateToolOptionsPanel
+WARNING: No active tool selected.
+Aug 23, 2024 2:31:15 AM net.rytale.pixelart.gui.MainWindow start
+INFO: Pixel Art Creator started successfully.
+Aug 23, 2024 2:31:18 AM net.rytale.pixelart.tools.ToolLoader createTool
+INFO: Attempting to create tool: net.rytale.pixelart.tools.tool.PencilTool
+Aug 23, 2024 2:31:18 AM net.rytale.pixelart.gui.MainWindow lambda$updateToolSelector$4
+INFO: Selected tool: net.rytale.pixelart.tools.tool.PencilTool
+Aug 23, 2024 2:31:19 AM net.rytale.pixelart.tools.ToolLoader createTool
+INFO: Attempting to create tool: net.rytale.pixelart.tools.tool.EraserTool
+Aug 23, 2024 2:31:19 AM net.rytale.pixelart.tools.ToolLoader createTool
+SEVERE: Failed to create tool: net.rytale.pixelart.tools.tool.EraserTool.<init>(net.rytale.pixelart.layers.PixelCanvas,javafx.scene.paint.Color)
+Aug 23, 2024 2:31:19 AM net.rytale.pixelart.gui.MainWindow lambda$updateToolSelector$4
+WARNING: Failed to select tool: net.rytale.pixelart.tools.tool.EraserTool
+Aug 23, 2024 3:12:58 AM net.rytale.pixelart.gui.MainWindow lambda$start$3
+INFO: Application is closing.
+Aug 23, 2024 3:13:37 AM net.rytale.pixelart.tools.ToolLoader loadTools
+INFO: Attempting to load class: net.rytale.pixelart.tools.tool.BucketFillTool
+Aug 23, 2024 3:13:37 AM net.rytale.pixelart.tools.ToolLoader loadTools
+INFO: Loaded tool: net.rytale.pixelart.tools.tool.BucketFillTool
+Aug 23, 2024 3:13:37 AM net.rytale.pixelart.tools.ToolLoader loadTools
+INFO: Attempting to load class: net.rytale.pixelart.tools.tool.EraserTool
+Aug 23, 2024 3:13:37 AM net.rytale.pixelart.tools.ToolLoader loadTools
+INFO: Loaded tool: net.rytale.pixelart.tools.tool.EraserTool
+Aug 23, 2024 3:13:37 AM net.rytale.pixelart.tools.ToolLoader loadTools
+INFO: Attempting to load class: net.rytale.pixelart.tools.tool.LineTool
+Aug 23, 2024 3:13:37 AM net.rytale.pixelart.tools.ToolLoader loadTools
+INFO: Loaded tool: net.rytale.pixelart.tools.tool.LineTool
+Aug 23, 2024 3:13:37 AM net.rytale.pixelart.tools.ToolLoader loadTools
+INFO: Attempting to load class: net.rytale.pixelart.tools.tool.PencilTool
+Aug 23, 2024 3:13:37 AM net.rytale.pixelart.tools.ToolLoader loadTools
+INFO: Loaded tool: net.rytale.pixelart.tools.tool.PencilTool
+Aug 23, 2024 3:13:37 AM net.rytale.pixelart.tools.ToolLoader loadTools
+INFO: Attempting to load class: net.rytale.pixelart.tools.tool.RectangleTool
+Aug 23, 2024 3:13:37 AM net.rytale.pixelart.tools.ToolLoader loadTools
+INFO: Loaded tool: net.rytale.pixelart.tools.tool.RectangleTool
+Aug 23, 2024 3:13:37 AM net.rytale.pixelart.tools.ToolLoader createTool
+INFO: Attempting to create tool: net.rytale.pixelart.tools.tool.EraserTool
+Aug 23, 2024 3:13:37 AM net.rytale.pixelart.gui.MainWindow updateToolOptionsPanel
+WARNING: No options panel provided for the active tool.
+Aug 23, 2024 3:13:37 AM net.rytale.pixelart.gui.MainWindow start
+INFO: Pixel Art Creator started successfully.
+Aug 23, 2024 3:13:39 AM net.rytale.pixelart.tools.ToolLoader createTool
+INFO: Attempting to create tool: net.rytale.pixelart.tools.tool.PencilTool
+Aug 23, 2024 3:13:39 AM net.rytale.pixelart.gui.MainWindow lambda$updateToolSelector$4
+INFO: Selected tool: net.rytale.pixelart.tools.tool.PencilTool
+Aug 23, 2024 3:13:42 AM net.rytale.pixelart.gui.MainWindow lambda$start$3
+INFO: Application is closing.
+Aug 23, 2024 3:14:37 AM net.rytale.pixelart.tools.ToolLoader loadTools
+INFO: Attempting to load class: net.rytale.pixelart.tools.tool.BucketFillTool
+Aug 23, 2024 3:14:37 AM net.rytale.pixelart.tools.ToolLoader loadTools
+INFO: Loaded tool: net.rytale.pixelart.tools.tool.BucketFillTool
+Aug 23, 2024 3:14:37 AM net.rytale.pixelart.tools.ToolLoader loadTools
+INFO: Attempting to load class: net.rytale.pixelart.tools.tool.EraserTool
+Aug 23, 2024 3:14:37 AM net.rytale.pixelart.tools.ToolLoader loadTools
+INFO: Loaded tool: net.rytale.pixelart.tools.tool.EraserTool
+Aug 23, 2024 3:14:37 AM net.rytale.pixelart.tools.ToolLoader loadTools
+INFO: Attempting to load class: net.rytale.pixelart.tools.tool.LineTool
+Aug 23, 2024 3:14:37 AM net.rytale.pixelart.tools.ToolLoader loadTools
+INFO: Loaded tool: net.rytale.pixelart.tools.tool.LineTool
+Aug 23, 2024 3:14:37 AM net.rytale.pixelart.tools.ToolLoader loadTools
+INFO: Attempting to load class: net.rytale.pixelart.tools.tool.PencilTool
+Aug 23, 2024 3:14:37 AM net.rytale.pixelart.tools.ToolLoader loadTools
+INFO: Loaded tool: net.rytale.pixelart.tools.tool.PencilTool
+Aug 23, 2024 3:14:37 AM net.rytale.pixelart.tools.ToolLoader loadTools
+INFO: Attempting to load class: net.rytale.pixelart.tools.tool.RectangleTool
+Aug 23, 2024 3:14:37 AM net.rytale.pixelart.tools.ToolLoader loadTools
+INFO: Loaded tool: net.rytale.pixelart.tools.tool.RectangleTool
+Aug 23, 2024 3:14:37 AM net.rytale.pixelart.tools.ToolLoader createTool
+INFO: Attempting to create tool: net.rytale.pixelart.tools.tool.EraserTool
+Aug 23, 2024 3:14:37 AM net.rytale.pixelart.gui.MainWindow updateToolOptionsPanel
+WARNING: No options panel provided for the active tool.
+Aug 23, 2024 3:14:37 AM net.rytale.pixelart.gui.MainWindow start
+INFO: Pixel Art Creator started successfully.
+Aug 23, 2024 3:14:38 AM net.rytale.pixelart.tools.ToolLoader createTool
+INFO: Attempting to create tool: net.rytale.pixelart.tools.tool.PencilTool
+Aug 23, 2024 3:14:38 AM net.rytale.pixelart.gui.MainWindow lambda$updateToolSelector$4
+INFO: Selected tool: net.rytale.pixelart.tools.tool.PencilTool
+Aug 23, 2024 3:26:27 AM net.rytale.pixelart.gui.MainWindow lambda$start$3
+INFO: Application is closing.

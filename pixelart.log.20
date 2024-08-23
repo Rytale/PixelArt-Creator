@@ -1,0 +1,32 @@
+Aug 23, 2024 3:12:50 AM net.rytale.pixelart.tools.ToolLoader loadTools
+INFO: Attempting to load class: net.rytale.pixelart.tools.tool.BucketFillTool
+Aug 23, 2024 3:12:50 AM net.rytale.pixelart.tools.ToolLoader loadTools
+INFO: Loaded tool: net.rytale.pixelart.tools.tool.BucketFillTool
+Aug 23, 2024 3:12:50 AM net.rytale.pixelart.tools.ToolLoader loadTools
+INFO: Attempting to load class: net.rytale.pixelart.tools.tool.EraserTool
+Aug 23, 2024 3:12:50 AM net.rytale.pixelart.tools.ToolLoader loadTools
+INFO: Loaded tool: net.rytale.pixelart.tools.tool.EraserTool
+Aug 23, 2024 3:12:50 AM net.rytale.pixelart.tools.ToolLoader loadTools
+INFO: Attempting to load class: net.rytale.pixelart.tools.tool.LineTool
+Aug 23, 2024 3:12:50 AM net.rytale.pixelart.tools.ToolLoader loadTools
+INFO: Loaded tool: net.rytale.pixelart.tools.tool.LineTool
+Aug 23, 2024 3:12:50 AM net.rytale.pixelart.tools.ToolLoader loadTools
+INFO: Attempting to load class: net.rytale.pixelart.tools.tool.PencilTool
+Aug 23, 2024 3:12:50 AM net.rytale.pixelart.tools.ToolLoader loadTools
+INFO: Loaded tool: net.rytale.pixelart.tools.tool.PencilTool
+Aug 23, 2024 3:12:50 AM net.rytale.pixelart.tools.ToolLoader loadTools
+INFO: Attempting to load class: net.rytale.pixelart.tools.tool.RectangleTool
+Aug 23, 2024 3:12:50 AM net.rytale.pixelart.tools.ToolLoader loadTools
+INFO: Loaded tool: net.rytale.pixelart.tools.tool.RectangleTool
+Aug 23, 2024 3:12:50 AM net.rytale.pixelart.tools.ToolLoader createTool
+INFO: Attempting to create tool: net.rytale.pixelart.tools.tool.EraserTool
+Aug 23, 2024 3:12:50 AM net.rytale.pixelart.gui.MainWindow updateToolOptionsPanel
+WARNING: No options panel provided for the active tool.
+Aug 23, 2024 3:12:51 AM net.rytale.pixelart.gui.MainWindow start
+INFO: Pixel Art Creator started successfully.
+Aug 23, 2024 3:12:52 AM net.rytale.pixelart.tools.ToolLoader createTool
+INFO: Attempting to create tool: net.rytale.pixelart.tools.tool.PencilTool
+Aug 23, 2024 3:12:52 AM net.rytale.pixelart.gui.MainWindow lambda$updateToolSelector$4
+INFO: Selected tool: net.rytale.pixelart.tools.tool.PencilTool
+Aug 23, 2024 3:13:31 AM net.rytale.pixelart.gui.MainWindow lambda$start$3
+INFO: Application is closing.

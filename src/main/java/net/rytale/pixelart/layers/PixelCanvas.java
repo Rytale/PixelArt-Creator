@@ -6,111 +6,181 @@ import javafx.scene.image.WritableImage;
 import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.StackPane;
 import javafx.scene.paint.Color;
+import javafx.geometry.Pos;
 
 public class PixelCanvas extends StackPane {
-    private int canvasWidth;  // Width in grid units
-    private int canvasHeight; // Height in grid units
+    private int canvasWidth;  // Number of columns (width in grid units)
+    private int canvasHeight; // Number of rows (height in grid units)
     private int gridSize;     // Size of each grid cell in pixels
+    private double zoomLevel; // Zoom level, where 1.0 is 100% (no zoom)
+    private final double minZoomLevel = 0.5;  // Minimum zoom level (50%)
+    private final double maxZoomLevel = 2.0;  // Maximum zoom level (200%)
+
     private boolean showGrid; // Flag to control grid visibility
-    private boolean debugMode; // Flag to control debug logging
+    private WritableImage canvasSnapshot; // To store canvas state
 
     private final Canvas canvas;       // Main drawing canvas
     private final Canvas gridCanvas;   // Canvas for the grid overlay
-    private WritableImage canvasSnapshot;
-
+    private final Canvas overlayCanvas; // Canvas for the preview overlay
     private Color backgroundColor;     // Background color of the canvas
 
     public PixelCanvas(int width, int height, int gridSize) {
-        this.canvasWidth = width; // Width in grid units
-        this.canvasHeight = height; // Height in grid units
-        this.gridSize = gridSize; // Size of each grid cell in pixels
-        this.showGrid = true; // Grid is visible by default
-        this.debugMode = false; // Debug mode is off by default
-        this.backgroundColor = Color.WHITE; // Default background color
+        this.canvasWidth = width;  // Number of columns
+        this.canvasHeight = height; // Number of rows
+        this.gridSize = gridSize;  // Size of each cell in pixels
+        this.zoomLevel = 1.0;  // Start with no zoom (100%)
 
-        // Set up the canvases with the appropriate pixel dimensions
+        this.showGrid = true;
+        this.backgroundColor = Color.WHITE;
+
         this.canvas = new Canvas(width * gridSize, height * gridSize);
         this.gridCanvas = new Canvas(width * gridSize, height * gridSize);
+        this.overlayCanvas = new Canvas(width * gridSize, height * gridSize);
         this.canvasSnapshot = new WritableImage(width * gridSize, height * gridSize);
 
-        // Add both canvases to the StackPane
-        this.getChildren().addAll(canvas, gridCanvas);
+        // Add the canvases to the stack pane
+        this.getChildren().addAll(canvas, gridCanvas, overlayCanvas);
         clearCanvas();
+        drawGrid();
+
+        // Center the canvas within its parent
+        setAlignment(Pos.CENTER);
+
+        // Ensure the canvas stays centered and updates correctly
+        widthProperty().addListener((obs, oldVal, newVal) -> updateCanvasSize());
+        heightProperty().addListener((obs, oldVal, newVal) -> updateCanvasSize());
     }
 
-    public void setDebugMode(boolean debugMode) {
-        this.debugMode = debugMode;
+    // Public method to resize the canvas
+    public void resizeCanvasTo(int newWidth, int newHeight) {
+        this.canvasWidth = newWidth;
+        this.canvasHeight = newHeight;
+        updateCanvasSize();
+        restoreCanvasContent();
+        redrawGrid();
+    }
+
+    private void updateCanvasSize() {
+        double scaledWidth = canvasWidth * gridSize * zoomLevel;
+        double scaledHeight = canvasHeight * gridSize * zoomLevel;
+
+        canvas.setWidth(scaledWidth);
+        canvas.setHeight(scaledHeight);
+        gridCanvas.setWidth(scaledWidth);
+        gridCanvas.setHeight(scaledHeight);
+        overlayCanvas.setWidth(scaledWidth);
+        overlayCanvas.setHeight(scaledHeight);
+
+        restoreCanvasContent();  // Restore content to ensure it matches the new zoom level
+        redrawGrid();  // Redraw the grid to match the zoom level
+    }
+
+    public void setZoomLevel(double zoomLevel) {
+        this.zoomLevel = Math.max(minZoomLevel, Math.min(maxZoomLevel, zoomLevel));  // Constrain zoom level
+        updateCanvasSize();  // Adjust canvas size and content based on zoom level
+    }
+
+    public double getZoomLevel() {
+        return zoomLevel;
     }
 
     public void clearCanvas() {
         GraphicsContext gc = canvas.getGraphicsContext2D();
         gc.setFill(backgroundColor);
-        gc.fillRect(0, 0, canvas.getWidth(), canvas.getHeight());
-        saveCanvasSnapshot();
-        restoreCanvasContent();
-        redrawGrid(); // Ensure the grid is drawn as an overlay after clearing the canvas
+        gc.fillRect(0, 0, canvasWidth * gridSize, canvasHeight * gridSize);
+        saveCanvasSnapshot();  // Save the cleared state
     }
 
     public void drawPixel(int x, int y, Color color) {
-        // Draw a pixel in the correct grid position
         GraphicsContext gc = canvas.getGraphicsContext2D();
         gc.setFill(color);
-        gc.fillRect(x * gridSize, y * gridSize, gridSize, gridSize);
-        saveCanvasSnapshot(); // Save the canvas state after drawing a pixel
-        redrawGrid(); // Redraw the grid as an overlay
+
+        // Draw the pixel using logical grid positions, not affected by zoom
+        double zoomedGridSize = gridSize * zoomLevel;
+        gc.fillRect(x * zoomedGridSize, y * zoomedGridSize, zoomedGridSize, zoomedGridSize);
+        saveCanvasSnapshot();
     }
 
-    public Color getPixelColor(int x, int y) {
-        // Return the color of a pixel at the specified grid position
-        return canvasSnapshot.getPixelReader().getColor(x * gridSize, y * gridSize);
-    }
-
+    // Save the current state of the canvas
     public void saveCanvasSnapshot() {
-        // Save the current canvas content (without the grid)
         canvas.snapshot(null, canvasSnapshot);
     }
 
+    // Restore the canvas content from the saved snapshot
     public void restoreCanvasContent() {
-        // Restore the canvas content from the snapshot
         GraphicsContext gc = canvas.getGraphicsContext2D();
-        gc.drawImage(canvasSnapshot, 0, 0);
+        gc.clearRect(0, 0, canvas.getWidth(), canvas.getHeight());
+        gc.drawImage(canvasSnapshot, 0, 0, canvas.getWidth(), canvas.getHeight());
+    }
+
+    // Method to get the graphics context for drawing previews on the overlay canvas
+    public GraphicsContext getOverlayGraphicsContext() {
+        return overlayCanvas.getGraphicsContext2D();
+    }
+
+    // Method to clear the overlay canvas
+    public void clearOverlay() {
+        getOverlayGraphicsContext().clearRect(0, 0, overlayCanvas.getWidth(), overlayCanvas.getHeight());
+    }
+
+    public int[] mapMouseToGrid(MouseEvent event) {
+        // Get the local X and Y coordinates, adjusting for zoom
+        double localX = canvas.sceneToLocal(event.getSceneX(), event.getSceneY()).getX() / (gridSize * zoomLevel);
+        double localY = canvas.sceneToLocal(event.getSceneX(), event.getSceneY()).getY() / (gridSize * zoomLevel);
+
+        int gridX = (int) localX;
+        int gridY = (int) localY;
+
+        // Ensure the coordinates stay within the canvas bounds
+        gridX = Math.max(0, Math.min(gridX, canvasWidth - 1));
+        gridY = Math.max(0, Math.min(gridY, canvasHeight - 1));
+
+        return new int[]{gridX, gridY};
     }
 
     public void drawGrid() {
-        if (!showGrid) return; // Skip drawing the grid if it's disabled
+        if (!showGrid) return;
 
         GraphicsContext gc = gridCanvas.getGraphicsContext2D();
-        gc.clearRect(0, 0, gridCanvas.getWidth(), gridCanvas.getHeight()); // Clear previous grid
+        gc.clearRect(0, 0, gridCanvas.getWidth(), gridCanvas.getHeight());
 
-        gc.setStroke(Color.LIGHTGRAY); // Adjust grid color for better appearance
-        gc.setLineWidth(1); // Set a suitable line width
+        gc.setStroke(Color.LIGHTGRAY);
+        gc.setLineWidth(1);
 
-        // Draw vertical grid lines
-        for (int x = 0; x <= canvasWidth * gridSize; x += gridSize) {
-            gc.strokeLine(x, 0, x, canvasHeight * gridSize);
+        double zoomedGridSize = gridSize * zoomLevel;
+
+        for (int x = 0; x <= canvasWidth; x++) {
+            gc.strokeLine(x * zoomedGridSize, 0, x * zoomedGridSize, canvasHeight * zoomedGridSize);
         }
 
-        // Draw horizontal grid lines
-        for (int y = 0; y <= canvasHeight * gridSize; y += gridSize) {
-            gc.strokeLine(0, y, canvasWidth * gridSize, y);
+        for (int y = 0; y <= canvasHeight; y++) {
+            gc.strokeLine(0, y * zoomedGridSize, canvasWidth * zoomedGridSize, y * zoomedGridSize);
         }
+    }
+
+    public int getGridSize() {
+        return gridSize;
     }
 
     public void redrawGrid() {
         if (showGrid) {
-            drawGrid(); // Draw the grid if it should be visible
+            drawGrid();
         } else {
-            gridCanvas.getGraphicsContext2D().clearRect(0, 0, gridCanvas.getWidth(), gridCanvas.getHeight()); // Clear grid canvas
+            gridCanvas.getGraphicsContext2D().clearRect(0, 0, gridCanvas.getWidth(), gridCanvas.getHeight());
         }
     }
 
     public void toggleGridVisibility() {
         this.showGrid = !this.showGrid;
-        redrawGrid(); // Redraw the grid based on its new visibility
+        redrawGrid();
     }
 
     public boolean isGridVisible() {
         return showGrid;
+    }
+
+    public Color getPixelColor(int x, int y) {
+        return canvasSnapshot.getPixelReader().getColor((int)(x * gridSize * zoomLevel), (int)(y * gridSize * zoomLevel));
     }
 
     public GraphicsContext getDrawingGraphicsContext() {
@@ -125,60 +195,13 @@ public class PixelCanvas extends StackPane {
         return canvasHeight;
     }
 
-    public int getGridSize() {
-        return gridSize;
-    }
-
-    public void setGridSize(int gridSize) {
-        this.gridSize = gridSize;
-        resizeCanvas(canvasWidth, canvasHeight); // Adjust the canvas size accordingly
-    }
-
-    public void resizeCanvas(int newWidth, int newHeight) {
-        this.canvasWidth = newWidth;
-        this.canvasHeight = newHeight;
-
-        // Adjust the size of both canvases based on the new grid and canvas sizes
-        canvas.setWidth(newWidth * gridSize);
-        canvas.setHeight(newHeight * gridSize);
-        gridCanvas.setWidth(newWidth * gridSize);
-        gridCanvas.setHeight(newHeight * gridSize);
-
-        // Clear and redraw the canvas with the updated dimensions
-        clearCanvas();
-    }
-
-    // Updated method to accurately map mouse coordinates to grid positions using sceneToLocal conversion
-    public int[] mapMouseToGrid(MouseEvent event) {
-        // Convert scene coordinates to local coordinates relative to the canvas
-        double localX = canvas.sceneToLocal(event.getSceneX(), event.getSceneY()).getX();
-        double localY = canvas.sceneToLocal(event.getSceneX(), event.getSceneY()).getY();
-
-        // Convert the local coordinates to grid coordinates
-        int gridX = (int) (localX / gridSize);
-        int gridY = (int) (localY / gridSize);
-
-        // Ensure the coordinates are within the canvas bounds
-        gridX = Math.max(0, Math.min(gridX, canvasWidth - 1));
-        gridY = Math.max(0, Math.min(gridY, canvasHeight - 1));
-
-        // Debugging output controlled by the debugMode flag
-        if (debugMode) {
-            System.out.println("Local X: " + localX + ", Local Y: " + localY);
-            System.out.println("Grid X: " + gridX + ", Grid Y: " + gridY);
-        }
-
-        return new int[]{gridX, gridY};
-    }
-
-    // New methods for getting and setting the background color
-
     public Color getBackgroundColor() {
         return backgroundColor;
     }
 
     public void setBackgroundColor(Color backgroundColor) {
         this.backgroundColor = backgroundColor;
-        clearCanvas();  // Redraw the canvas with the new background color
+        clearCanvas();
+        redrawGrid();
     }
 }

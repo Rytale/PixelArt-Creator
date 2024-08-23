@@ -14,8 +14,12 @@ public class LineTool extends AbstractDrawingTool {
 
     @Override
     protected void drawPreview(int startX, int startY, int endX, int endY) {
-        GraphicsContext gc = canvas.getDrawingGraphicsContext();  // Use the new method to get the GraphicsContext
+        GraphicsContext gc = canvas.getOverlayGraphicsContext();
+        gc.clearRect(0, 0, canvas.getWidth(), canvas.getHeight());  // Clear previous preview
+
         gc.setFill(Color.color(color.getRed(), color.getGreen(), color.getBlue(), 0.5));  // Semi-transparent preview color
+
+        int gridSize = canvas.getGridSize();
 
         int dx = Math.abs(endX - startX);
         int dy = Math.abs(endY - startY);
@@ -23,8 +27,15 @@ public class LineTool extends AbstractDrawingTool {
         int sy = startY < endY ? 1 : -1;
         int err = dx - dy;
 
+        // Draw the preview by filling the grid cells
         while (true) {
-            gc.fillRect(startX * canvas.getGridSize(), startY * canvas.getGridSize(), canvas.getGridSize(), canvas.getGridSize());
+            // Calculate the logical position on the grid, ignoring zoom
+            int xPos = startX * gridSize;
+            int yPos = startY * gridSize;
+
+            // Fill the grid cell at (startX, startY)
+            gc.fillRect(xPos, yPos, gridSize, gridSize);
+
             if (startX == endX && startY == endY) break;
             int e2 = 2 * err;
             if (e2 > -dy) {
@@ -46,8 +57,10 @@ public class LineTool extends AbstractDrawingTool {
         int sy = startY < endY ? 1 : -1;
         int err = dx - dy;
 
+        // Draw the final line by filling the grid cells
         while (true) {
-            canvas.drawPixel(startX, startY, color);  // Use the drawPixel method to make the line permanent
+            canvas.drawPixel(startX, startY, color);  // Fill the grid cell at (startX, startY)
+
             if (startX == endX && startY == endY) break;
             int e2 = 2 * err;
             if (e2 > -dy) {
@@ -59,10 +72,14 @@ public class LineTool extends AbstractDrawingTool {
                 startY += sy;
             }
         }
+
+        // Clear the overlay after the final line is drawn
+        canvas.clearOverlay();
     }
 
     @Override
     public VBox createOptionsPanel() {
+        // Implement any tool options UI here, if necessary
         return null;
     }
 }

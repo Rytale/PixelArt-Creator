@@ -18,7 +18,7 @@ import net.rytale.pixelart.utils.AppLogger;
 public class ToolLoader {
     private static final Logger logger = AppLogger.getLogger();
     public static final String APP_DATA_DIRECTORY = System.getProperty("user.home") + File.separator + "RytalePixels";
-    public static final String TOOL_DIRECTORY = APP_DATA_DIRECTORY + File.separator + "tools";
+    public static final String TOOL_DIRECTORY = APP_DATA_DIRECTORY + File.separator + "icons";
     private static final String TOOL_PACKAGE = "net.rytale.pixelart.tools.tool";
     private Map<String, Class<? extends AbstractDrawingTool>> tools = new HashMap<>();
 

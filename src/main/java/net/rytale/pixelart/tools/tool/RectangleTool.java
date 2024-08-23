@@ -14,22 +14,24 @@ public class RectangleTool extends AbstractDrawingTool {
 
     @Override
     protected void drawPreview(int startX, int startY, int endX, int endY) {
+        GraphicsContext gc = canvas.getOverlayGraphicsContext();
+        gc.clearRect(0, 0, canvas.getWidth(), canvas.getHeight());
+
+        gc.setFill(Color.color(color.getRed(), color.getGreen(), color.getBlue(), 0.5));
+
         int minX = Math.min(startX, endX);
         int minY = Math.min(startY, endY);
         int maxX = Math.max(startX, endX);
         int maxY = Math.max(startY, endY);
 
-        GraphicsContext gc = canvas.getDrawingGraphicsContext();
-        gc.setFill(Color.color(color.getRed(), color.getGreen(), color.getBlue(), 0.5));
+        int gridSize = canvas.getGridSize();
+        double zoom = canvas.getZoomLevel();
 
+        // Draw rectangle preview using grid coordinates and scaling by zoom
         for (int x = minX; x <= maxX; x++) {
-            gc.fillRect(x * canvas.getGridSize(), minY * canvas.getGridSize(), canvas.getGridSize(), canvas.getGridSize());  // Top border
-            gc.fillRect(x * canvas.getGridSize(), maxY * canvas.getGridSize(), canvas.getGridSize(), canvas.getGridSize());  // Bottom border
-        }
-
-        for (int y = minY + 1; y < maxY; y++) {
-            gc.fillRect(minX * canvas.getGridSize(), y * canvas.getGridSize(), canvas.getGridSize(), canvas.getGridSize());  // Left border
-            gc.fillRect(maxX * canvas.getGridSize(), y * canvas.getGridSize(), canvas.getGridSize(), canvas.getGridSize());  // Right border
+            for (int y = minY; y <= maxY; y++) {
+                gc.fillRect(x * gridSize * zoom, y * gridSize * zoom, gridSize * zoom, gridSize * zoom);
+            }
         }
     }
 
@@ -45,6 +47,8 @@ public class RectangleTool extends AbstractDrawingTool {
                 canvas.drawPixel(x, y, color);
             }
         }
+
+        canvas.clearOverlay();
     }
 
     @Override

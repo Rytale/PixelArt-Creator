@@ -4,31 +4,35 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0c172d1f-209c-40f3-86a6-8a5babc6823e" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.mvn/wrapper/maven-wrapper.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mvnw" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mvnw.cmd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/net/rytale/pixelart/file/FileHandler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/net/rytale/pixelart/file/ProjectFile.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/net/rytale/pixelart/gui/MainWindow.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/net/rytale/pixelart/layers/PixelCanvas.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/net/rytale/pixelart/tools/AbstractDrawingTool.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/net/rytale/pixelart/tools/ToolLoader.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/net/rytale/pixelart/tools/tool/BucketFillTool.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/net/rytale/pixelart/tools/tool/EraserTool.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/net/rytale/pixelart/tools/tool/LineTool.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/net/rytale/pixelart/tools/tool/PencilTool.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/net/rytale/pixelart/tools/tool/RectangleTool.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/net/rytale/pixelart/utils/AppLogger.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/net/rytale/pixelart/hello-view.fxml" afterDir="false" />
+    <list default="true" id="0c172d1f-209c-40f3-86a6-8a5babc6823e" name="Changes" comment="Working 1.0">
+      <change afterPath="$PROJECT_DIR$/src/main/resources/icons/settings.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/icons/settings.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pixelart.log" beforeDir="false" afterPath="$PROJECT_DIR$/pixelart.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pixelart.log.1" beforeDir="false" afterPath="$PROJECT_DIR$/pixelart.log.1" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pixelart.log.10" beforeDir="false" afterPath="$PROJECT_DIR$/pixelart.log.10" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pixelart.log.11" beforeDir="false" afterPath="$PROJECT_DIR$/pixelart.log.11" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pixelart.log.12" beforeDir="false" afterPath="$PROJECT_DIR$/pixelart.log.12" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pixelart.log.13" beforeDir="false" afterPath="$PROJECT_DIR$/pixelart.log.13" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pixelart.log.14" beforeDir="false" afterPath="$PROJECT_DIR$/pixelart.log.14" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pixelart.log.15" beforeDir="false" afterPath="$PROJECT_DIR$/pixelart.log.15" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pixelart.log.16" beforeDir="false" afterPath="$PROJECT_DIR$/pixelart.log.16" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pixelart.log.17" beforeDir="false" afterPath="$PROJECT_DIR$/pixelart.log.17" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pixelart.log.19" beforeDir="false" afterPath="$PROJECT_DIR$/pixelart.log.19" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pixelart.log.2" beforeDir="false" afterPath="$PROJECT_DIR$/pixelart.log.2" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pixelart.log.20" beforeDir="false" afterPath="$PROJECT_DIR$/pixelart.log.20" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pixelart.log.3" beforeDir="false" afterPath="$PROJECT_DIR$/pixelart.log.3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pixelart.log.4" beforeDir="false" afterPath="$PROJECT_DIR$/pixelart.log.4" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pixelart.log.5" beforeDir="false" afterPath="$PROJECT_DIR$/pixelart.log.5" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pixelart.log.6" beforeDir="false" afterPath="$PROJECT_DIR$/pixelart.log.6" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pixelart.log.7" beforeDir="false" afterPath="$PROJECT_DIR$/pixelart.log.7" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pixelart.log.8" beforeDir="false" afterPath="$PROJECT_DIR$/pixelart.log.8" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pixelart.log.9" beforeDir="false" afterPath="$PROJECT_DIR$/pixelart.log.9" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/net/rytale/pixelart/gui/MainWindow.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/rytale/pixelart/gui/MainWindow.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/net/rytale/pixelart/layers/PixelCanvas.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/rytale/pixelart/layers/PixelCanvas.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/net/rytale/pixelart/tools/ToolLoader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/rytale/pixelart/tools/ToolLoader.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/net/rytale/pixelart/tools/tool/LineTool.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/rytale/pixelart/tools/tool/LineTool.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/net/rytale/pixelart/tools/tool/RectangleTool.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/rytale/pixelart/tools/tool/RectangleTool.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -52,9 +56,12 @@
       </MavenGeneralSettings>
     </option>
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 0
-}]]></component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 0
+}</component>
   <component name="ProjectId" id="2l2Y5qy7FDIiuBXT2RDtJxKNxgb" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
@@ -78,13 +85,19 @@
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "git-widget-placeholder": "master",
     "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/Users/Teamq/IdeaProjects/Pixelart-creator/src/main/resources/icons",
     "project.structure.last.edited": "Project",
     "project.structure.proportion": "0.0",
     "project.structure.side.proportion": "0.0"
   }
 }]]></component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Teamq\IdeaProjects\Pixelart-creator\src\main\resources\icons" />
+      <recent name="C:\Users\Teamq\IdeaProjects\Pixelart-creator\src\main\resources" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Teamq\IdeaProjects\Pixelart-creator\src\main\resources\icons" />
       <recent name="C:\Users\Teamq\IdeaProjects\Pixelart-creator\src\main\java\net\rytale\pixelart\tools\tool" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
@@ -168,6 +181,50 @@
       <option name="presentableId" value="Default" />
       <updated>1724379458978</updated>
     </task>
+    <task id="LOCAL-00001" summary="Working 1.0">
+      <option name="closed" value="true" />
+      <created>1724401624242</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1724401624242</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Working 1.0">
+      <option name="closed" value="true" />
+      <created>1724401660619</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1724401660619</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="HEAD" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Working 1.0" />
+    <option name="LAST_COMMIT_MESSAGE" value="Working 1.0" />
   </component>
 </project>

@@ -265,10 +265,10 @@ public class RectangleTool extends AbstractDrawingTool {
 
         // Add Sections to Options Panel
         optionsPanel.getChildren().addAll(
-                createSection("Modes", modeLabel, modeSection),
+                createSection(modeLabel, modeSection),
                 customFillControls, // Add custom fill controls
                 new Separator(),
-                createSection("Debug Mode", debugModeLabel, debugModeToggle),
+                createSection(debugModeLabel, debugModeToggle),
                 new Separator(),
                 createDebugBoxSection() // The debug section will be shown or hidden based on debug mode
         );
@@ -349,7 +349,7 @@ public class RectangleTool extends AbstractDrawingTool {
         return radioButton;
     }
 
-    private VBox createSection(String title, Label label, javafx.scene.Node... controls) {
+    private VBox createSection(Label label, javafx.scene.Node... controls) {
         VBox section = new VBox(5);
         section.getChildren().addAll(label);
         section.getChildren().addAll(controls);

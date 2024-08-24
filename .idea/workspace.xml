@@ -9,17 +9,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0c172d1f-209c-40f3-86a6-8a5babc6823e" name="Changes" comment="Working 1.0">
-      <change afterPath="$PROJECT_DIR$/.idea/artifacts/pixel_art_creator.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/META-INF/MANIFEST.MF" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/icons/custom_fill_icon.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/icons/hollow_icon.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/icons/solid_icon.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+    <list default="true" id="0c172d1f-209c-40f3-86a6-8a5babc6823e" name="Changes" comment="Working 2.0&#10;&#10;&#10;Working tools:&#10;&#10;rect&#10;line&#10;pen">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mvnw" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pixelart.log" beforeDir="false" afterPath="$PROJECT_DIR$/pixelart.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pixelart.log.1" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/pixelart.log.10" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/pixelart.log.11" beforeDir="false" />
@@ -31,7 +22,6 @@
       <change beforePath="$PROJECT_DIR$/pixelart.log.17" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/pixelart.log.18" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/pixelart.log.19" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pixelart.log.2" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/pixelart.log.2.lck" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/pixelart.log.20" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/pixelart.log.3" beforeDir="false" />
@@ -41,16 +31,6 @@
       <change beforePath="$PROJECT_DIR$/pixelart.log.7" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/pixelart.log.8" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/pixelart.log.9" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/net/rytale/pixelart/file/FileHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/rytale/pixelart/file/FileHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/net/rytale/pixelart/file/ProjectFile.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/rytale/pixelart/file/ProjectFile.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/net/rytale/pixelart/gui/MainWindow.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/rytale/pixelart/gui/MainWindow.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/net/rytale/pixelart/layers/PixelCanvas.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/rytale/pixelart/layers/PixelCanvas.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/net/rytale/pixelart/tools/AbstractDrawingTool.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/rytale/pixelart/tools/AbstractDrawingTool.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/net/rytale/pixelart/tools/tool/BucketFillTool.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/rytale/pixelart/tools/tool/BucketFillTool.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/net/rytale/pixelart/tools/tool/EraserTool.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/rytale/pixelart/tools/tool/EraserTool.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/net/rytale/pixelart/tools/tool/LineTool.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/rytale/pixelart/tools/tool/LineTool.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/net/rytale/pixelart/tools/tool/PencilTool.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/rytale/pixelart/tools/tool/PencilTool.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/net/rytale/pixelart/tools/tool/RectangleTool.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/rytale/pixelart/tools/tool/RectangleTool.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -69,6 +49,15 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GithubDefaultAccount">
+    <option name="defaultAccountId" value="f9ec9c2b-603c-4924-9b60-b8013b18c1b9" />
+  </component>
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "https://github.com/Rytale/PixelArt-Creator.git",
+    "accountId": "f9ec9c2b-603c-4924-9b60-b8013b18c1b9"
+  }
+}]]></component>
   <component name="MavenImportPreferences">
     <option name="generalSettings">
       <MavenGeneralSettings>
@@ -90,6 +79,7 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
     "Application.HelloApplication.executor": "Run",
     "Application.MainWindow.executor": "Run",
     "Application.start.executor": "Run",
@@ -123,7 +113,8 @@
     "last_opened_file_path": "C:/Users/Teamq/IdeaProjects/Pixelart-creator",
     "project.structure.last.edited": "Artifacts",
     "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.18951242"
+    "project.structure.side.proportion": "0.18951242",
+    "settings.editor.selected.configurable": "org.jetbrains.plugins.github.ui.GithubSettingsConfigurable"
   }
 }]]></component>
   <component name="RecentsManager">
@@ -259,7 +250,15 @@
       <option name="project" value="LOCAL" />
       <updated>1724444902696</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Working 2.0&#10;&#10;&#10;Working tools:&#10;&#10;rect&#10;line&#10;pen">
+      <option name="closed" value="true" />
+      <created>1724528617438</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1724528617438</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -287,6 +286,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Working 1.0" />
-    <option name="LAST_COMMIT_MESSAGE" value="Working 1.0" />
+    <MESSAGE value="Working 2.0&#10;&#10;&#10;Working tools:&#10;&#10;rect&#10;line&#10;pen" />
+    <option name="LAST_COMMIT_MESSAGE" value="Working 2.0&#10;&#10;&#10;Working tools:&#10;&#10;rect&#10;line&#10;pen" />
   </component>
 </project>

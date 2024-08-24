@@ -25,6 +25,7 @@ import net.rytale.pixelart.tools.AbstractDrawingTool;
 
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
+import java.util.Objects;
 
 public class RectangleTool extends AbstractDrawingTool {
 
@@ -276,19 +277,13 @@ public class RectangleTool extends AbstractDrawingTool {
     }
 
     private void updateModeIcon() {
-        String iconName = "";
-        switch (currentMode) {
-            case "Solid":
-                iconName = "solid_icon.png";
-                break;
-            case "Hollow":
-                iconName = "hollow_icon.png";
-                break;
-            case "Custom Fill":
-                iconName = "custom_fill_icon.png";
-                break;
-        }
-        Image icon = new Image(getClass().getResourceAsStream("/icons/" + iconName));
+        String iconName = switch (currentMode) {
+            case "Solid" -> "solid_icon.png";
+            case "Hollow" -> "hollow_icon.png";
+            case "Custom Fill" -> "custom_fill_icon.png";
+            default -> "";
+        };
+        Image icon = new Image(Objects.requireNonNull(getClass().getResourceAsStream("/icons/" + iconName)));
         modeIconView.setImage(icon);
     }
 

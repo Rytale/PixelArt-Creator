@@ -41,6 +41,8 @@ public abstract class AbstractDrawingTool {
     }
 
     public abstract VBox createOptionsPanel(); // Add this method to create tool-specific options panel
+
+
 }
 
 

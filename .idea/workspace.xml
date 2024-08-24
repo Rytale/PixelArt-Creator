@@ -1,37 +1,56 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="ArtifactsWorkspaceSettings">
+    <artifacts-to-build>
+      <artifact name="pixel-art-creator" />
+    </artifacts-to-build>
+  </component>
   <component name="AutoImportSettings">
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0c172d1f-209c-40f3-86a6-8a5babc6823e" name="Changes" comment="Working 1.0">
-      <change afterPath="$PROJECT_DIR$/src/main/resources/icons/settings.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/icons/settings.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/artifacts/pixel_art_creator.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/META-INF/MANIFEST.MF" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/icons/custom_fill_icon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/icons/hollow_icon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/icons/solid_icon.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mvnw" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/pixelart.log" beforeDir="false" afterPath="$PROJECT_DIR$/pixelart.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pixelart.log.1" beforeDir="false" afterPath="$PROJECT_DIR$/pixelart.log.1" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pixelart.log.10" beforeDir="false" afterPath="$PROJECT_DIR$/pixelart.log.10" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pixelart.log.11" beforeDir="false" afterPath="$PROJECT_DIR$/pixelart.log.11" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pixelart.log.12" beforeDir="false" afterPath="$PROJECT_DIR$/pixelart.log.12" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pixelart.log.13" beforeDir="false" afterPath="$PROJECT_DIR$/pixelart.log.13" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pixelart.log.14" beforeDir="false" afterPath="$PROJECT_DIR$/pixelart.log.14" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pixelart.log.15" beforeDir="false" afterPath="$PROJECT_DIR$/pixelart.log.15" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pixelart.log.16" beforeDir="false" afterPath="$PROJECT_DIR$/pixelart.log.16" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pixelart.log.17" beforeDir="false" afterPath="$PROJECT_DIR$/pixelart.log.17" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pixelart.log.19" beforeDir="false" afterPath="$PROJECT_DIR$/pixelart.log.19" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pixelart.log.2" beforeDir="false" afterPath="$PROJECT_DIR$/pixelart.log.2" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pixelart.log.20" beforeDir="false" afterPath="$PROJECT_DIR$/pixelart.log.20" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pixelart.log.3" beforeDir="false" afterPath="$PROJECT_DIR$/pixelart.log.3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pixelart.log.4" beforeDir="false" afterPath="$PROJECT_DIR$/pixelart.log.4" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pixelart.log.5" beforeDir="false" afterPath="$PROJECT_DIR$/pixelart.log.5" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pixelart.log.6" beforeDir="false" afterPath="$PROJECT_DIR$/pixelart.log.6" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pixelart.log.7" beforeDir="false" afterPath="$PROJECT_DIR$/pixelart.log.7" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pixelart.log.8" beforeDir="false" afterPath="$PROJECT_DIR$/pixelart.log.8" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pixelart.log.9" beforeDir="false" afterPath="$PROJECT_DIR$/pixelart.log.9" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pixelart.log.1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pixelart.log.10" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pixelart.log.11" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pixelart.log.12" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pixelart.log.13" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pixelart.log.14" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pixelart.log.15" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pixelart.log.16" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pixelart.log.17" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pixelart.log.18" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pixelart.log.19" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pixelart.log.2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pixelart.log.2.lck" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pixelart.log.20" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pixelart.log.3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pixelart.log.4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pixelart.log.5" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pixelart.log.6" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pixelart.log.7" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pixelart.log.8" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pixelart.log.9" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/net/rytale/pixelart/file/FileHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/rytale/pixelart/file/FileHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/net/rytale/pixelart/file/ProjectFile.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/rytale/pixelart/file/ProjectFile.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/net/rytale/pixelart/gui/MainWindow.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/rytale/pixelart/gui/MainWindow.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/net/rytale/pixelart/layers/PixelCanvas.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/rytale/pixelart/layers/PixelCanvas.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/net/rytale/pixelart/tools/ToolLoader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/rytale/pixelart/tools/ToolLoader.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/net/rytale/pixelart/tools/AbstractDrawingTool.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/rytale/pixelart/tools/AbstractDrawingTool.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/net/rytale/pixelart/tools/tool/BucketFillTool.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/rytale/pixelart/tools/tool/BucketFillTool.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/net/rytale/pixelart/tools/tool/EraserTool.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/rytale/pixelart/tools/tool/EraserTool.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/net/rytale/pixelart/tools/tool/LineTool.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/rytale/pixelart/tools/tool/LineTool.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/net/rytale/pixelart/tools/tool/PencilTool.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/rytale/pixelart/tools/tool/PencilTool.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/net/rytale/pixelart/tools/tool/RectangleTool.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/rytale/pixelart/tools/tool/RectangleTool.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -43,6 +62,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Class" />
+        <option value="module-info" />
       </list>
     </option>
   </component>
@@ -73,22 +93,37 @@
     "Application.HelloApplication.executor": "Run",
     "Application.MainWindow.executor": "Run",
     "Application.start.executor": "Run",
+    "JAR Application.original-pixel-art-creator-1.0-SNAPSHOT.jar.executor": "Run",
+    "JAR Application.pixel-art-creator-1.0-SNAPSHOT-shaded.jar.executor": "Run",
     "JAR Application.pixel-art-creator-1.0-SNAPSHOT.jar.executor": "Run",
+    "JAR Application.pixel-art-creator-1.0.0.jar.executor": "Run",
+    "JAR Application.pixel_art_creator.jar.executor": "Run",
     "Maven.pixel-art-creator [clean].executor": "Run",
+    "Maven.pixel-art-creator [com.gluonhq:gluonfx-maven-plugin:1.0.9:build].executor": "Run",
+    "Maven.pixel-art-creator [com.gluonhq:gluonfx-maven-plugin:1.0.9:compile].executor": "Run",
+    "Maven.pixel-art-creator [com.gluonhq:gluonfx-maven-plugin:1.0.9:install].executor": "Run",
+    "Maven.pixel-art-creator [com.gluonhq:gluonfx-maven-plugin:1.0.9:link].executor": "Run",
+    "Maven.pixel-art-creator [com.gluonhq:gluonfx-maven-plugin:1.0.9:nativerun].executor": "Run",
+    "Maven.pixel-art-creator [com.gluonhq:gluonfx-maven-plugin:1.0.9:package].executor": "Run",
+    "Maven.pixel-art-creator [com.gluonhq:gluonfx-maven-plugin:1.0.9:run].executor": "Run",
     "Maven.pixel-art-creator [compile].executor": "Run",
     "Maven.pixel-art-creator [install].executor": "Run",
+    "Maven.pixel-art-creator [org.apache.maven.plugins:maven-clean-plugin:2.5:clean].executor": "Run",
     "Maven.pixel-art-creator [org.apache.maven.plugins:maven-compiler-plugin:3.1:compile].executor": "Run",
+    "Maven.pixel-art-creator [org.openjfx:javafx-maven-plugin:0.0.8:jlink].executor": "Run",
     "Maven.pixel-art-creator [org.openjfx:javafx-maven-plugin:0.0.8:run].executor": "Run",
+    "Maven.pixel-art-creator [org.panteleyev:jpackage-maven-plugin:1.5.0:jpackage].executor": "Run",
+    "Maven.pixel-art-creator [package].executor": "Run",
     "Maven.pixelart [install].executor": "Run",
     "Maven.pixelart [javafx:run].executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "git-widget-placeholder": "master",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/Teamq/IdeaProjects/Pixelart-creator/src/main/resources/icons",
-    "project.structure.last.edited": "Project",
+    "last_opened_file_path": "C:/Users/Teamq/IdeaProjects/Pixelart-creator",
+    "project.structure.last.edited": "Artifacts",
     "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.0"
+    "project.structure.side.proportion": "0.18951242"
   }
 }]]></component>
   <component name="RecentsManager">
@@ -101,6 +136,7 @@
       <recent name="C:\Users\Teamq\IdeaProjects\Pixelart-creator\src\main\java\net\rytale\pixelart\tools\tool" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="net.rytale.pixelart.tools.tool" />
       <recent name="tools" />
     </key>
   </component>
@@ -112,9 +148,21 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="pixel-art-creator-1.0-SNAPSHOT-shaded.jar" type="JarApplication" temporary="true">
+      <option name="JAR_PATH" value="$PROJECT_DIR$/target/pixel-art-creator-1.0-SNAPSHOT-shaded.jar" />
+      <method v="2" />
+    </configuration>
     <configuration name="pixel-art-creator-1.0-SNAPSHOT.jar" type="JarApplication" temporary="true">
       <option name="JAR_PATH" value="$PROJECT_DIR$/target/pixel-art-creator-1.0-SNAPSHOT.jar" />
       <option name="ALTERNATIVE_JRE_PATH" />
+      <method v="2" />
+    </configuration>
+    <configuration name="pixel-art-creator-1.0.0.jar" type="JarApplication" temporary="true">
+      <option name="JAR_PATH" value="$PROJECT_DIR$/target/pixel-art-creator-1.0.0.jar" />
+      <method v="2" />
+    </configuration>
+    <configuration name="pixel_art_creator.jar" type="JarApplication" temporary="true">
+      <option name="JAR_PATH" value="$PROJECT_DIR$/out/artifacts/pixel_art_creator/pixel_art_creator.jar" />
       <method v="2" />
     </configuration>
     <configuration default="true" type="JetRunConfigurationType">
@@ -162,13 +210,19 @@
     </configuration>
     <list>
       <item itemvalue="Application.start" />
+      <item itemvalue="JAR Application.pixel-art-creator-1.0.0.jar" />
+      <item itemvalue="JAR Application.pixel_art_creator.jar" />
+      <item itemvalue="JAR Application.pixel-art-creator-1.0-SNAPSHOT-shaded.jar" />
       <item itemvalue="JAR Application.pixel-art-creator-1.0-SNAPSHOT.jar" />
       <item itemvalue="Maven.pixelart [javafx:run]" />
     </list>
     <recent_temporary>
       <list>
         <item itemvalue="Maven.pixelart [javafx:run]" />
+        <item itemvalue="JAR Application.pixel-art-creator-1.0.0.jar" />
+        <item itemvalue="JAR Application.pixel_art_creator.jar" />
         <item itemvalue="JAR Application.pixel-art-creator-1.0-SNAPSHOT.jar" />
+        <item itemvalue="JAR Application.pixel-art-creator-1.0-SNAPSHOT-shaded.jar" />
       </list>
     </recent_temporary>
   </component>
@@ -197,7 +251,15 @@
       <option name="project" value="LOCAL" />
       <updated>1724401660619</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Working 1.0">
+      <option name="closed" value="true" />
+      <created>1724444902696</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1724444902696</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">

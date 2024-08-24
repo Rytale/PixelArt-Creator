@@ -33,7 +33,7 @@ public class FileHandler {
     public PixelCanvas loadProject(File file) throws IOException, ClassNotFoundException {
         try (ObjectInputStream in = new ObjectInputStream(new FileInputStream(file))) {
             ProjectFile projectFile = (ProjectFile) in.readObject();
-            return projectFile.getCanvas();
+            return projectFile.canvas();
         }
     }
 }

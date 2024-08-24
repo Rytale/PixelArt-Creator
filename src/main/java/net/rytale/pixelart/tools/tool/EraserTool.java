@@ -46,5 +46,7 @@ public class EraserTool extends AbstractDrawingTool {
     public VBox createOptionsPanel() {
         return null;
     }
+
+
 }
 

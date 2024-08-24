@@ -50,16 +50,9 @@ public class PixelCanvas extends StackPane {
         widthProperty().addListener((obs, oldVal, newVal) -> updateCanvasSize());
         heightProperty().addListener((obs, oldVal, newVal) -> updateCanvasSize());
     }
-
-    // Public method to resize the canvas
-    public void resizeCanvasTo(int newWidth, int newHeight) {
-        this.canvasWidth = newWidth;
-        this.canvasHeight = newHeight;
-        updateCanvasSize();
-        restoreCanvasContent();
-        redrawGrid();
+    public WritableImage getCanvasSnapshot() {
+        return canvasSnapshot;
     }
-
     private void updateCanvasSize() {
         double scaledWidth = canvasWidth * gridSize * zoomLevel;
         double scaledHeight = canvasHeight * gridSize * zoomLevel;
@@ -71,13 +64,14 @@ public class PixelCanvas extends StackPane {
         overlayCanvas.setWidth(scaledWidth);
         overlayCanvas.setHeight(scaledHeight);
 
-        restoreCanvasContent();  // Restore content to ensure it matches the new zoom level
-        redrawGrid();  // Redraw the grid to match the zoom level
+        redrawGrid(); // Ensure grid is redrawn after resizing
+        restoreCanvasContent(); // Restore canvas content after resize
     }
+
 
     public void setZoomLevel(double zoomLevel) {
         this.zoomLevel = Math.max(minZoomLevel, Math.min(maxZoomLevel, zoomLevel));  // Constrain zoom level
-        updateCanvasSize();  // Adjust canvas size and content based on zoom level
+        updateCanvasSize();  // Update the canvas size and redraw content based on zoom level
     }
 
     public double getZoomLevel() {
@@ -87,7 +81,7 @@ public class PixelCanvas extends StackPane {
     public void clearCanvas() {
         GraphicsContext gc = canvas.getGraphicsContext2D();
         gc.setFill(backgroundColor);
-        gc.fillRect(0, 0, canvasWidth * gridSize, canvasHeight * gridSize);
+        gc.fillRect(0, 0, canvas.getWidth(), canvas.getHeight());
         saveCanvasSnapshot();  // Save the cleared state
     }
 
@@ -95,9 +89,13 @@ public class PixelCanvas extends StackPane {
         GraphicsContext gc = canvas.getGraphicsContext2D();
         gc.setFill(color);
 
-        // Draw the pixel using logical grid positions, not affected by zoom
+        // Calculate the position and size based on the zoom level
         double zoomedGridSize = gridSize * zoomLevel;
-        gc.fillRect(x * zoomedGridSize, y * zoomedGridSize, zoomedGridSize, zoomedGridSize);
+        double xPos = x * zoomedGridSize;
+        double yPos = y * zoomedGridSize;
+
+        // Draw the pixel using logical grid positions
+        gc.fillRect(xPos, yPos, zoomedGridSize, zoomedGridSize);
         saveCanvasSnapshot();
     }
 
@@ -145,7 +143,7 @@ public class PixelCanvas extends StackPane {
         gc.clearRect(0, 0, gridCanvas.getWidth(), gridCanvas.getHeight());
 
         gc.setStroke(Color.LIGHTGRAY);
-        gc.setLineWidth(1);
+        gc.setLineWidth(1 / zoomLevel);
 
         double zoomedGridSize = gridSize * zoomLevel;
 
@@ -177,6 +175,27 @@ public class PixelCanvas extends StackPane {
 
     public boolean isGridVisible() {
         return showGrid;
+    }
+    public void resizeCanvasTo(int newWidth, int newHeight) {
+        this.canvasWidth = newWidth;
+        this.canvasHeight = newHeight;
+
+        double scaledWidth = canvasWidth * gridSize * zoomLevel;
+        double scaledHeight = canvasHeight * gridSize * zoomLevel;
+
+        canvas.setWidth(scaledWidth);
+        canvas.setHeight(scaledHeight);
+        gridCanvas.setWidth(scaledWidth);
+        gridCanvas.setHeight(scaledHeight);
+        overlayCanvas.setWidth(scaledWidth);
+        overlayCanvas.setHeight(scaledHeight);
+
+        // Clear the canvas and grid after resizing
+        clearCanvas();
+        redrawGrid();
+
+        // Restore any previous canvas content if needed
+        restoreCanvasContent();
     }
 
     public Color getPixelColor(int x, int y) {

@@ -70,5 +70,7 @@ public class PencilTool extends AbstractDrawingTool {
         optionsPanel.getChildren().addAll(debugModeLabel, debugModeCheckBox);
         return optionsPanel;
     }
+
+
 }
 

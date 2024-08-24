@@ -32,6 +32,8 @@ public class BucketFillTool extends AbstractDrawingTool {
         return null;
     }
 
+
+
     private void fillArea(int x, int y, Color newColor) {
         Color targetColor = canvas.getPixelColor(x, y);
         if (targetColor.equals(newColor)) {

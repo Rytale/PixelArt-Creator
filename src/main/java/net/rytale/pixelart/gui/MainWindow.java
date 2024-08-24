@@ -88,6 +88,7 @@ public class MainWindow extends Application {
             rootPane.setBottom(createRoundedContainer(coordinateLabel));
             BorderPane.setAlignment(coordinateLabel, Pos.CENTER);
 
+            // Event handlers for drawing tools
             pixelCanvas.setOnMousePressed(this::handleMousePressed);
             pixelCanvas.setOnMouseDragged(this::handleMouseDragged);
             pixelCanvas.setOnMouseReleased(this::handleMouseReleased);
@@ -110,7 +111,6 @@ public class MainWindow extends Application {
             logger.info("Pixel Art Creator started successfully.");
         } catch (Exception e) {
             logger.severe("Failed to start application: " + e.getMessage());
-
         }
     }
 
@@ -239,7 +239,7 @@ public class MainWindow extends Application {
 
         Label zoomLabel = new Label("Zoom:");
         zoomLabel.setStyle("-fx-text-fill: #fff;");
-        Slider zoomSlider = new Slider(0.5, 2.0, 1.0); // Range from 50% to 300% zoom
+        Slider zoomSlider = new Slider(0.5, 2.0, 1.0); // Range from 50% to 200% zoom
         zoomSlider.setStyle("-fx-control-inner-background: #333; -fx-text-fill: #fff;");
         zoomSlider.setShowTickLabels(true);
         zoomSlider.setShowTickMarks(true);
@@ -320,3 +320,4 @@ public class MainWindow extends Application {
         launch(args);
     }
 }
+

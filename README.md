@@ -73,7 +73,7 @@ This project is licensed under the MIT License - see the `LICENSE` file for deta
 
 ## Contact
 
-For any questions, feedback, or support, feel free to contact me at [your-email@example.com].
+For any questions, feedback, or support, feel free to contact me at discord: sheet_of_paper.
 
 ---
 

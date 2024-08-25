@@ -6,16 +6,18 @@ Welcome to the **PixelArt Tool**! This Java-based application, built with JavaFX
 ## Features (So Far)
 - **Canvas**: Create and edit pixel art on a simple grid.
 - **Basic Tools**:
+  - **Line Tool**: Draw lines.
   - **Pen Tool**: Draw individual pixels.
   - **Eraser Tool**: Remove pixels by erasing them from the canvas.
-  - **Color Picker**: Select colors from a palette to draw with.
+  - **Rectangle Tool**: Draw Rectangles.
   - **Fill Tool**: Fill areas with a selected color.
 
 ## Known Issues & Help Needed
 - **Zoom Functionality**: Currently facing challenges with implementing zoom functionality. Any assistance or suggestions on how to effectively handle zoom in JavaFX would be greatly appreciated.
-- **Grid Toggle**: This feature has not yet been implemented but is planned for future updates.
+- I want to rewrite how the pixels are stored on the canvas for more dynamic usage down the line open to suggestions on this. 
 
 ## Planned Features
+- **Grid Toggle**: This feature has not yet been implemented but is planned for future updates.
 - **Zoom and Grid Toggle**: Improved control over the canvas for detailed editing.
 - **Layer Support**: Work with multiple layers to create more complex pixel art.
 - **Advanced Tools**: 

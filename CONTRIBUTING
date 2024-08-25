@@ -1,0 +1,69 @@
+# Contributing to PixelArt Tool
+
+Thank you for considering contributing to the **PixelArt Tool**! This document outlines the process for contributing to the project, including reporting issues, submitting code, and best practices.
+
+## Table of Contents
+
+1. [How to Contribute](#how-to-contribute)
+2. [Reporting Issues](#reporting-issues)
+3. [Submitting Changes](#submitting-changes)
+4. [Coding Guidelines](#coding-guidelines)
+5. [Getting Help](#getting-help)
+
+## How to Contribute
+
+There are several ways you can contribute to the project:
+
+- **Reporting Bugs**: If you encounter a bug, please report it by opening an issue.
+- **Suggesting Enhancements**: Have an idea for a new feature? We’d love to hear about it!
+- **Writing Code**: If you’re familiar with Java and JavaFX, feel free to tackle any open issues or suggest improvements.
+
+## Reporting Issues
+
+If you find a bug or have a feature request, please open an issue on our [GitHub Issues page](https://github.com/yourusername/PixelArtTool/issues). When reporting an issue, please include:
+
+- A clear and descriptive title.
+- Steps to reproduce the issue.
+- Expected and actual behavior.
+- Screenshots, if applicable.
+- Your environment (Java version, OS, etc.).
+
+## Submitting Changes
+
+1. **Fork the repository**: Click the "Fork" button on the top right of the repository page.
+2. **Create a branch**: Create a new branch for your feature or bugfix.
+
+    ```bash
+    git checkout -b feature-name
+    ```
+
+3. **Make your changes**: Implement your feature or fix the bug.
+4. **Commit your changes**: Write a clear and concise commit message.
+
+    ```bash
+    git commit -m "Add feature or fix description"
+    ```
+
+5. **Push to your branch**:
+
+    ```bash
+    git push origin feature-name
+    ```
+
+6. **Submit a pull request**: Go to your fork on GitHub and submit a pull request. Include a description of your changes and reference any related issues.
+
+## Coding Guidelines
+
+To maintain consistency and readability, please adhere to the following coding standards:
+
+- **Java Code Style**: Follow the [Google Java Style Guide](https://google.github.io/styleguide/javaguide.html).
+- **Code Comments**: Use Javadoc-style comments for classes and methods. Include comments where necessary to explain complex logic.
+- **Security**: Ensure that your code adheres to best practices for security. Avoid using deprecated methods or vulnerable code patterns.
+- **Performance**: Consider the performance implications of your code, especially when working with large canvases or real-time rendering.
+
+## Getting Help
+
+If you need help with contributing, feel free to reach out:
+
+- **Open an Issue**: If you’re stuck, open an issue with your question on GitHub.
+- **Discord:**Sheet_of_paper Message me if you have any questions about this project.
